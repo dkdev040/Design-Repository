@@ -3,39 +3,79 @@
 <head>
 	<meta charset="UTF-8">
 	<title>DK Design</title>
-	<link rel="stylesheet" href="styles/styles.css">
-	<link rel="preconnect" href="http://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400;500;700&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/2ed20bf97b.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="styles/styles.css"> <!-- Link to stylesheet -->
+	<link rel="preconnect" href="http://fonts.googleapis.com"> <!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400;500;700&display=swap" rel="stylesheet"> <!-- Fonts -->
+	<script src="https://kit.fontawesome.com/2ed20bf97b.js" crossorigin="anonymous"></script> <!-- Icons -->
 </head>
 
 <body class="main-content">
-	<header class="section sec1 header active">
-	
-	</header>
-	<main>
-		<section class="section sec2 intro"></section>
-		<section class="section sec3 design-portfolio"></section>
-		<section class="section sec4 development-portfolio"></section>
-		<section class="section sec5 about"></section>
-		<section class="section sec6 contact"></section>
+	<header class="section sec1 home active" id="home"> <!-- Top of index page -->
+		<div class="header-content">
+			<div class="left-header">
+				<div class="h-shape"></div>
+				<div class="image">
+					<img src="Images/deborah-kennedy.png" alt="">
+				</div>
+			</div>
+			<div class="right-header">
+				<h1 class="name">
+					Hi, I'm <span>Deborah Kennedy</span>
+					A Digital Product Design Professional.
+				</h1>
+				<p>
+					Professional intro.
+				</p>
+				<div class="btn-con">
+					<a href="#" class="main-btn">
+					<span class="btn-text">Download Resume</span>
+					<span class"btn-icon"><i class="fa-solid fa-circle-down"></i></span>
+					</a>
+				</div>
+			</div>
+		<section class="section sec2 about" id="about"></section> <!-- Portfolio section -->
+			<div class="main-title">
+				<h2>About <span>Me</span><span class="bg-text">My Stats</span></h2>
+			</div>
+			<div class="about-container">
+				<div class="left-about">
+					<h4>About Me</h4>
+					<p>
+					Lorem Ipsum
+					</p>
+					<div class="btn-con">
+						<a href="#" class="main-btn">
+						<span class="btn-text">Download Resume</span>
+						<span class="btn-icon"><i class="fa-solid fa-circle-down"></i></span>
+						</a>
+					</div>
+				</div>
+				<div class="right-about">
+					<div class="abt-item">
+						<div class="abt-text">
+							<p class="large-text">560+</p>
+							<p class="small-text">Projects <br /> Completed</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		<section class="section sec3 portfolios" id="portfolios"></section> <!--About Me section, probably will be removed-->
+		<section class="section sec4 contact" id="contact"></section> <!--Contact Me section, probably will be removed-->
 	</main>
 	
-	<div class="controls">
-		<div class="control control-1 active-btn">
+	<div class="controls"> <!-- buttons -->
+		<div class="control control-1 active-btn" data-id="home"> <!-- Top of index page -->
 			<i class="fa-solid fa-house-chimney"></i></div>
-		<div class="control control-2">
-			<i class="fa-solid fa-palette"></i></div>
-		<div class="control control-3">
-			<i class="fa-solid fa-code"></i></div>
-		<div class="control control-4">
+		<div class="control control-2" data-id="about"> <!-- Portfolio section, lower on index page -->
+			<i class="fa-solid fa-briefcase"></i></div>
+		<div class="control control-3" data-id="portfolios"> <!-- About Me section, navigates to different page -->
 			<i class="fa-solid fa-info"></i></div>
-		<div class="control control-5">
-			<i class="fa-solid fa-envelope"></i></div>
+		<div class="control control-4" data-id="contact"> <!-- Contact Me section, navigates to different page -->
+			<i class="fa-solid fa-envelope"></i></div> 
 	</div>
 	
 	
-	<script src="app.js"></script>
+	<script src="app.js"></script> <!-- Javascript ref -->
 </body>
 </html>
